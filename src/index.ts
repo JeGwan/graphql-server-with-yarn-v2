@@ -12,9 +12,8 @@ async function startApolloServer() {
   const PORT = process.env.PORT || DEFAULT_PORT;
   const app = express();
   const httpServer = http.createServer(app);
-  const extension = process.env.NODE_ENV === "production" ? "js" : "ts";
   const schema = await buildSchema({
-    resolvers: [path.join(__dirname, `./resolvers/**/*.${extension}`)],
+    resolvers: [path.join(__dirname, `resolvers/**/*`)],
   });
   const server = new ApolloServer({
     schema,
