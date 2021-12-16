@@ -22,7 +22,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*":
+"@types/node@npm:*, @types/node@npm:^17.0.0":
   version: 17.0.0
   resolution: "@types/node@npm:17.0.0"
   checksum: 30970a70c2eb78dbe80613d73243c255aaa9ce057d9e8595069ca0aef0363db0af45dc0d35f445cc804576a99df2970c170130663d76cd60319b779872e92ad6
@@ -281,6 +281,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "yarn2-playground@workspace:."
   dependencies:
+    "@types/node": ^17.0.0
     class-validator: ^0.13.2
     graphql: ^16.1.0
     reflect-metadata: ^0.1.13

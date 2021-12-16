@@ -35,6 +35,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
+            ["@types/node", "npm:17.0.0"],
             ["class-validator", "npm:0.13.2"],
             ["graphql", "npm:16.1.0"],
             ["reflect-metadata", "npm:0.1.13"],
@@ -390,6 +391,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["yarn2-playground", "workspace:."],
+            ["@types/node", "npm:17.0.0"],
             ["class-validator", "npm:0.13.2"],
             ["graphql", "npm:16.1.0"],
             ["reflect-metadata", "npm:0.1.13"],
