@@ -35,9 +35,318 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {
           "packageLocation": "./",
           "packageDependencies": [
+            ["class-validator", "npm:0.13.2"],
+            ["graphql", "npm:16.1.0"],
+            ["reflect-metadata", "npm:0.1.13"],
+            ["type-graphql", "virtual:a7cf1f70d81c64703ac1a9d3156f6cff7671fad23a64d5e6a34a2e7dd5ab99e74ee4a30abc2301fb35de4965972e919a8be37f58c032b697addf70555cb2932f#npm:1.1.1"],
             ["typescript", "patch:typescript@npm%3A4.5.4#~builtin<compat/typescript>::version=4.5.4&hash=493e53"]
           ],
           "linkType": "SOFT",
+        }]
+      ]],
+      ["@types/glob", [
+        ["npm:7.2.0", {
+          "packageLocation": "./.yarn/cache/@types-glob-npm-7.2.0-772334bf9a-6ae717fedf.zip/node_modules/@types/glob/",
+          "packageDependencies": [
+            ["@types/glob", "npm:7.2.0"],
+            ["@types/minimatch", "npm:3.0.5"],
+            ["@types/node", "npm:17.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@types/minimatch", [
+        ["npm:3.0.5", {
+          "packageLocation": "./.yarn/cache/@types-minimatch-npm-3.0.5-802bb0797f-c41d136f67.zip/node_modules/@types/minimatch/",
+          "packageDependencies": [
+            ["@types/minimatch", "npm:3.0.5"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@types/node", [
+        ["npm:17.0.0", {
+          "packageLocation": "./.yarn/cache/@types-node-npm-17.0.0-6f9c2e4e41-30970a70c2.zip/node_modules/@types/node/",
+          "packageDependencies": [
+            ["@types/node", "npm:17.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@types/semver", [
+        ["npm:7.3.9", {
+          "packageLocation": "./.yarn/cache/@types-semver-npm-7.3.9-eb0d8b7243-60bfcfdfa7.zip/node_modules/@types/semver/",
+          "packageDependencies": [
+            ["@types/semver", "npm:7.3.9"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["balanced-match", [
+        ["npm:1.0.2", {
+          "packageLocation": "./.yarn/cache/balanced-match-npm-1.0.2-a53c126459-9706c088a2.zip/node_modules/balanced-match/",
+          "packageDependencies": [
+            ["balanced-match", "npm:1.0.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["brace-expansion", [
+        ["npm:1.1.11", {
+          "packageLocation": "./.yarn/cache/brace-expansion-npm-1.1.11-fb95eb05ad-faf34a7bb0.zip/node_modules/brace-expansion/",
+          "packageDependencies": [
+            ["brace-expansion", "npm:1.1.11"],
+            ["balanced-match", "npm:1.0.2"],
+            ["concat-map", "npm:0.0.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["class-validator", [
+        ["npm:0.13.2", {
+          "packageLocation": "./.yarn/cache/class-validator-npm-0.13.2-915206252c-0deb4c29fa.zip/node_modules/class-validator/",
+          "packageDependencies": [
+            ["class-validator", "npm:0.13.2"],
+            ["libphonenumber-js", "npm:1.9.44"],
+            ["validator", "npm:13.7.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["concat-map", [
+        ["npm:0.0.1", {
+          "packageLocation": "./.yarn/cache/concat-map-npm-0.0.1-85a921b7ee-902a9f5d89.zip/node_modules/concat-map/",
+          "packageDependencies": [
+            ["concat-map", "npm:0.0.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["fs.realpath", [
+        ["npm:1.0.0", {
+          "packageLocation": "./.yarn/cache/fs.realpath-npm-1.0.0-c8f05d8126-99ddea01a7.zip/node_modules/fs.realpath/",
+          "packageDependencies": [
+            ["fs.realpath", "npm:1.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["glob", [
+        ["npm:7.2.0", {
+          "packageLocation": "./.yarn/cache/glob-npm-7.2.0-bb4644d239-78a8ea9423.zip/node_modules/glob/",
+          "packageDependencies": [
+            ["glob", "npm:7.2.0"],
+            ["fs.realpath", "npm:1.0.0"],
+            ["inflight", "npm:1.0.6"],
+            ["inherits", "npm:2.0.4"],
+            ["minimatch", "npm:3.0.4"],
+            ["once", "npm:1.4.0"],
+            ["path-is-absolute", "npm:1.0.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["graphql", [
+        ["npm:16.1.0", {
+          "packageLocation": "./.yarn/cache/graphql-npm-16.1.0-524f63e630-fa393f0e3d.zip/node_modules/graphql/",
+          "packageDependencies": [
+            ["graphql", "npm:16.1.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["graphql-query-complexity", [
+        ["npm:0.7.2", {
+          "packageLocation": "./.yarn/cache/graphql-query-complexity-npm-0.7.2-829d8de8a4-defe9a5e9c.zip/node_modules/graphql-query-complexity/",
+          "packageDependencies": [
+            ["graphql-query-complexity", "npm:0.7.2"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:2c2066c2ff623311ba396eb3ef4bfeaf3d9eee92a0a8cfaa412289aae895ecd0382ec0460f31aa2b45b226fa8eae1f15ea4a391785dfa1baa0327bd2563ae261#npm:0.7.2", {
+          "packageLocation": "./.yarn/__virtual__/graphql-query-complexity-virtual-91bafc600d/0/cache/graphql-query-complexity-npm-0.7.2-829d8de8a4-defe9a5e9c.zip/node_modules/graphql-query-complexity/",
+          "packageDependencies": [
+            ["graphql-query-complexity", "virtual:2c2066c2ff623311ba396eb3ef4bfeaf3d9eee92a0a8cfaa412289aae895ecd0382ec0460f31aa2b45b226fa8eae1f15ea4a391785dfa1baa0327bd2563ae261#npm:0.7.2"],
+            ["@types/graphql", null],
+            ["graphql", "npm:16.1.0"],
+            ["lodash.get", "npm:4.4.2"]
+          ],
+          "packagePeers": [
+            "@types/graphql",
+            "graphql"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["graphql-subscriptions", [
+        ["npm:1.2.1", {
+          "packageLocation": "./.yarn/cache/graphql-subscriptions-npm-1.2.1-6f6629f38d-2b9533c677.zip/node_modules/graphql-subscriptions/",
+          "packageDependencies": [
+            ["graphql-subscriptions", "npm:1.2.1"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:2c2066c2ff623311ba396eb3ef4bfeaf3d9eee92a0a8cfaa412289aae895ecd0382ec0460f31aa2b45b226fa8eae1f15ea4a391785dfa1baa0327bd2563ae261#npm:1.2.1", {
+          "packageLocation": "./.yarn/__virtual__/graphql-subscriptions-virtual-f0827d689e/0/cache/graphql-subscriptions-npm-1.2.1-6f6629f38d-2b9533c677.zip/node_modules/graphql-subscriptions/",
+          "packageDependencies": [
+            ["graphql-subscriptions", "virtual:2c2066c2ff623311ba396eb3ef4bfeaf3d9eee92a0a8cfaa412289aae895ecd0382ec0460f31aa2b45b226fa8eae1f15ea4a391785dfa1baa0327bd2563ae261#npm:1.2.1"],
+            ["@types/graphql", null],
+            ["graphql", "npm:16.1.0"],
+            ["iterall", "npm:1.3.0"]
+          ],
+          "packagePeers": [
+            "@types/graphql",
+            "graphql"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["inflight", [
+        ["npm:1.0.6", {
+          "packageLocation": "./.yarn/cache/inflight-npm-1.0.6-ccedb4b908-f4f76aa072.zip/node_modules/inflight/",
+          "packageDependencies": [
+            ["inflight", "npm:1.0.6"],
+            ["once", "npm:1.4.0"],
+            ["wrappy", "npm:1.0.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["inherits", [
+        ["npm:2.0.4", {
+          "packageLocation": "./.yarn/cache/inherits-npm-2.0.4-c66b3957a0-4a48a73384.zip/node_modules/inherits/",
+          "packageDependencies": [
+            ["inherits", "npm:2.0.4"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["iterall", [
+        ["npm:1.3.0", {
+          "packageLocation": "./.yarn/cache/iterall-npm-1.3.0-a2cb04809f-c78b99678f.zip/node_modules/iterall/",
+          "packageDependencies": [
+            ["iterall", "npm:1.3.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["libphonenumber-js", [
+        ["npm:1.9.44", {
+          "packageLocation": "./.yarn/cache/libphonenumber-js-npm-1.9.44-cb990777a3-cac1f8c4d3.zip/node_modules/libphonenumber-js/",
+          "packageDependencies": [
+            ["libphonenumber-js", "npm:1.9.44"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["lodash.get", [
+        ["npm:4.4.2", {
+          "packageLocation": "./.yarn/cache/lodash.get-npm-4.4.2-7bda64ed87-e403047ddb.zip/node_modules/lodash.get/",
+          "packageDependencies": [
+            ["lodash.get", "npm:4.4.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["lru-cache", [
+        ["npm:6.0.0", {
+          "packageLocation": "./.yarn/cache/lru-cache-npm-6.0.0-b4c8668fe1-f97f499f89.zip/node_modules/lru-cache/",
+          "packageDependencies": [
+            ["lru-cache", "npm:6.0.0"],
+            ["yallist", "npm:4.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["minimatch", [
+        ["npm:3.0.4", {
+          "packageLocation": "./.yarn/cache/minimatch-npm-3.0.4-6e76f51c23-66ac295f8a.zip/node_modules/minimatch/",
+          "packageDependencies": [
+            ["minimatch", "npm:3.0.4"],
+            ["brace-expansion", "npm:1.1.11"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["once", [
+        ["npm:1.4.0", {
+          "packageLocation": "./.yarn/cache/once-npm-1.4.0-ccf03ef07a-cd0a885013.zip/node_modules/once/",
+          "packageDependencies": [
+            ["once", "npm:1.4.0"],
+            ["wrappy", "npm:1.0.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["path-is-absolute", [
+        ["npm:1.0.1", {
+          "packageLocation": "./.yarn/cache/path-is-absolute-npm-1.0.1-31bc695ffd-060840f92c.zip/node_modules/path-is-absolute/",
+          "packageDependencies": [
+            ["path-is-absolute", "npm:1.0.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["reflect-metadata", [
+        ["npm:0.1.13", {
+          "packageLocation": "./.yarn/cache/reflect-metadata-npm-0.1.13-c525998e20-798d379a7b.zip/node_modules/reflect-metadata/",
+          "packageDependencies": [
+            ["reflect-metadata", "npm:0.1.13"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["semver", [
+        ["npm:7.3.5", {
+          "packageLocation": "./.yarn/cache/semver-npm-7.3.5-618cf5db6a-5eafe6102b.zip/node_modules/semver/",
+          "packageDependencies": [
+            ["semver", "npm:7.3.5"],
+            ["lru-cache", "npm:6.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["tslib", [
+        ["npm:2.3.1", {
+          "packageLocation": "./.yarn/cache/tslib-npm-2.3.1-0e21e18015-de17a98d46.zip/node_modules/tslib/",
+          "packageDependencies": [
+            ["tslib", "npm:2.3.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["type-graphql", [
+        ["npm:1.1.1", {
+          "packageLocation": "./.yarn/unplugged/type-graphql-virtual-2c2066c2ff/node_modules/type-graphql/",
+          "packageDependencies": [
+            ["type-graphql", "npm:1.1.1"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:a7cf1f70d81c64703ac1a9d3156f6cff7671fad23a64d5e6a34a2e7dd5ab99e74ee4a30abc2301fb35de4965972e919a8be37f58c032b697addf70555cb2932f#npm:1.1.1", {
+          "packageLocation": "./.yarn/unplugged/type-graphql-virtual-2c2066c2ff/node_modules/type-graphql/",
+          "packageDependencies": [
+            ["type-graphql", "virtual:a7cf1f70d81c64703ac1a9d3156f6cff7671fad23a64d5e6a34a2e7dd5ab99e74ee4a30abc2301fb35de4965972e919a8be37f58c032b697addf70555cb2932f#npm:1.1.1"],
+            ["@types/class-validator", null],
+            ["@types/glob", "npm:7.2.0"],
+            ["@types/graphql", null],
+            ["@types/node", "npm:17.0.0"],
+            ["@types/semver", "npm:7.3.9"],
+            ["class-validator", "npm:0.13.2"],
+            ["glob", "npm:7.2.0"],
+            ["graphql", "npm:16.1.0"],
+            ["graphql-query-complexity", "virtual:2c2066c2ff623311ba396eb3ef4bfeaf3d9eee92a0a8cfaa412289aae895ecd0382ec0460f31aa2b45b226fa8eae1f15ea4a391785dfa1baa0327bd2563ae261#npm:0.7.2"],
+            ["graphql-subscriptions", "virtual:2c2066c2ff623311ba396eb3ef4bfeaf3d9eee92a0a8cfaa412289aae895ecd0382ec0460f31aa2b45b226fa8eae1f15ea4a391785dfa1baa0327bd2563ae261#npm:1.2.1"],
+            ["semver", "npm:7.3.5"],
+            ["tslib", "npm:2.3.1"]
+          ],
+          "packagePeers": [
+            "@types/class-validator",
+            "@types/graphql",
+            "class-validator",
+            "graphql"
+          ],
+          "linkType": "HARD",
         }]
       ]],
       ["typescript", [
@@ -49,11 +358,42 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["validator", [
+        ["npm:13.7.0", {
+          "packageLocation": "./.yarn/cache/validator-npm-13.7.0-624277e841-2b83283de1.zip/node_modules/validator/",
+          "packageDependencies": [
+            ["validator", "npm:13.7.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["wrappy", [
+        ["npm:1.0.2", {
+          "packageLocation": "./.yarn/cache/wrappy-npm-1.0.2-916de4d4b3-159da4805f.zip/node_modules/wrappy/",
+          "packageDependencies": [
+            ["wrappy", "npm:1.0.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["yallist", [
+        ["npm:4.0.0", {
+          "packageLocation": "./.yarn/cache/yallist-npm-4.0.0-b493d9e907-343617202a.zip/node_modules/yallist/",
+          "packageDependencies": [
+            ["yallist", "npm:4.0.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["yarn2-playground", [
         ["workspace:.", {
           "packageLocation": "./",
           "packageDependencies": [
             ["yarn2-playground", "workspace:."],
+            ["class-validator", "npm:0.13.2"],
+            ["graphql", "npm:16.1.0"],
+            ["reflect-metadata", "npm:0.1.13"],
+            ["type-graphql", "virtual:a7cf1f70d81c64703ac1a9d3156f6cff7671fad23a64d5e6a34a2e7dd5ab99e74ee4a30abc2301fb35de4965972e919a8be37f58c032b697addf70555cb2932f#npm:1.1.1"],
             ["typescript", "patch:typescript@npm%3A4.5.4#~builtin<compat/typescript>::version=4.5.4&hash=493e53"]
           ],
           "linkType": "SOFT",

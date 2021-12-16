@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "lib": ["es2018", "esnext.asynciterable"],
+    "target": "es2018",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "dist",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
+  },
+  "include": ["src/**/*"],
+  /* include: 확장자를 넣지 않으면 다음과 같이 기본 값을 가짐 (.ts, .tsx, and .d.ts by default, with .js and .jsx if allowJs is set to true). */
+  "exclude": ["dist"]
+  /* exclude: 오로지 include에서 찾지 않을 파일 또는 패턴! include 파일의 import에 의해 코드베이스에 포함될 수는 있음 */
+}
