@@ -243,7 +243,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/express@npm:4.17.13":
+"@types/express@npm:4.17.13, @types/express@npm:^4.17.13":
   version: 4.17.13
   resolution: "@types/express@npm:4.17.13"
   dependencies:
@@ -817,10 +817,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"graphql@npm:^16.1.0":
-  version: 16.1.0
-  resolution: "graphql@npm:16.1.0"
-  checksum: fa393f0e3d284a681606a3296aaa902e730036af89ae0142f91d72f7053c59627df65fc5fdac48f46d6c1f07f4406411ac4948b317621de729e3ccc8980dec1f
+"graphql@npm:^15.3.0":
+  version: 15.8.0
+  resolution: "graphql@npm:15.8.0"
+  checksum: 423325271db8858428641b9aca01699283d1fe5b40ef6d4ac622569ecca927019fce8196208b91dd1d8eb8114f00263fe661d241d0eb40c10e5bfd650f86ec5e
   languageName: node
   linkType: hard
 
@@ -1420,11 +1420,13 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "yarn2-playground@workspace:."
   dependencies:
+    "@types/express": ^4.17.13
     "@types/node": ^17.0.0
+    apollo-server-core: ^3.5.0
     apollo-server-express: ^3.5.0
     class-validator: ^0.13.2
     express: ^4.17.1
-    graphql: ^16.1.0
+    graphql: ^15.3.0
     reflect-metadata: ^0.1.13
     type-graphql: ^1.1.1
     typescript: ^4.5.4
