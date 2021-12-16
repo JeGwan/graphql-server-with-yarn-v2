@@ -90,3 +90,24 @@ npm i -g corepack
 ```sh
 yarn init -2
 ```
+
+PnP는 의존성 패키지를 기존처럼 FS으로 관리하지 않고 ZipFS를 통해 관리합니다.
+그래서 에디터가 의존성 패키지의 타입을 인식하게 하기 위해 다음과 같은 절차가 필요합니다.
+
+순서가 중요합니다!
+
+1. 타입스크립트를 설치합니다.
+
+```sh
+yarn add -D typescript
+```
+
+2. vscode 에 ZipFS 익스텐션을 설치합니다.
+
+3. vscode용 sdk를 설치합니다.
+
+```sh
+yarn dlx @yarnpkg/sdks vscode
+```
+
+4. vscode에서 typescript version 으로 workspace의 버전을 사용하게합니다.
