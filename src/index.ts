@@ -1,4 +1,6 @@
 import "reflect-metadata";
+import "../src/config/env";
+
 import { ApolloServerPluginDrainHttpServer } from "apollo-server-core";
 import { ApolloServer } from "apollo-server-express";
 import express from "express";
