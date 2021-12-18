@@ -661,6 +661,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"dotenv@npm:^10.0.0":
+  version: 10.0.0
+  resolution: "dotenv@npm:10.0.0"
+  checksum: f412c5fe8c24fbe313d302d2500e247ba8a1946492db405a4de4d30dd0eb186a88a43f13c958c5a7de303938949c4231c56994f97d05c4bc1f22478d631b4005
+  languageName: node
+  linkType: hard
+
 "ee-first@npm:1.1.1":
   version: 1.1.1
   resolution: "ee-first@npm:1.1.1"
@@ -795,15 +802,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"graphql-server-yarn2@workspace:.":
+"graphql-server-with-yarn-v2@workspace:.":
   version: 0.0.0-use.local
-  resolution: "graphql-server-yarn2@workspace:."
+  resolution: "graphql-server-with-yarn-v2@workspace:."
   dependencies:
     "@types/express": ^4.17.13
     "@types/node": ^17.0.0
     apollo-server-core: ^3.5.0
     apollo-server-express: ^3.5.0
     class-validator: ^0.13.2
+    dotenv: ^10.0.0
     express: ^4.17.1
     graphql: ^15.3.0
     reflect-metadata: ^0.1.13
