@@ -1,5 +1,5 @@
 {
-  "name": "graphql-server-yarn2",
+  "name": "graphql-server-with-yarn-v2",
   "packageManager": "yarn@3.1.1",
   "scripts": {
     "start": "ts-node src/index"
