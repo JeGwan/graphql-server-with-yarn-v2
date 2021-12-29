@@ -1,0 +1,7 @@
+{
+  "restartable": "restart",
+  "verbose": false,
+  "watch": ["src/"],
+  "ext": "ts,js,json,graphql",
+  "exec": "tsc && node dist/index"
+}
