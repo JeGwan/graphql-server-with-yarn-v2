@@ -2,7 +2,8 @@
   "name": "graphql-server-with-yarn-v2",
   "packageManager": "yarn@3.1.1",
   "scripts": {
-    "dev": "nodemon"
+    "dev": "nodemon",
+    "build": "tsc"
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
