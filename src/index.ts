@@ -1,5 +1,5 @@
 import "reflect-metadata";
-import "../src/config/env";
+import "./config/env";
 
 import { ApolloServerPluginDrainHttpServer } from "apollo-server-core";
 import { ApolloServer } from "apollo-server-express";
@@ -24,9 +24,10 @@ async function startApolloServer() {
   await server.start();
   server.applyMiddleware({ app });
   httpServer.listen({ port: PORT }, () =>
-    console.log(
+    console.info(
       `🚀 Server ready at http://localhost:${PORT}${server.graphqlPath}`
     )
   );
 }
+
 startApolloServer();
