@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 dotenv.config({
   path: path.resolve(
     __dirname,
-    `../config/.env${
+    `../../src/config/.env${
       process.env.NODE_ENV === "production" ? ".production" : ""
     }`
   ),
