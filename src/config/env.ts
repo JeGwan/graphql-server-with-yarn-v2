@@ -4,6 +4,9 @@ import dotenv from "dotenv";
 dotenv.config({
   path: path.resolve(
     __dirname,
-    `./.env${process.env.NODE_ENV === "production" ? ".production" : ""}`
+    // for dist folder access
+    `../../src/config.env${
+      process.env.NODE_ENV === "production" ? ".production" : ""
+    }`
   ),
 });
