@@ -1,4 +1,4 @@
-import { Field, ObjectType } from "type-graphql";
+import { Field, Float, ObjectType } from "type-graphql";
 
 @ObjectType()
 class User {
@@ -22,6 +22,11 @@ class User {
 
   @Field(() => [String], { nullable: "itemsAndList" })
   itemAndArrNullable!: string[];
+
+  @Field(() => Float, { nullable: true })
+  get random() {
+    return Math.random();
+  }
 
   itsNotField?: string;
 
