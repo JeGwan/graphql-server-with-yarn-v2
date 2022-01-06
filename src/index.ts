@@ -16,6 +16,12 @@ async function startApolloServer() {
   const httpServer = http.createServer(app);
   const schema = await buildSchema({
     resolvers: [path.join(__dirname, `resolvers/**/*`)],
+    emitSchemaFile: {
+      commentDescriptions: true,
+      // for dist folder access
+      path: path.join(__dirname, "../src/generated/schema.gql"),
+      sortedSchema: true,
+    },
   });
   const server = new ApolloServer({
     schema,
