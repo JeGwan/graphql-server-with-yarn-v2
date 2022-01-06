@@ -11,6 +11,20 @@ class User {
   @Field()
   lastName!: string;
 
+  @Field(() => [String])
+  bothNonNull!: string[];
+
+  @Field(() => [String], { nullable: true })
+  arrNullable!: string[];
+
+  @Field(() => [String], { nullable: "items" })
+  itemNullabel!: string[];
+
+  @Field(() => [String], { nullable: "itemsAndList" })
+  itemAndArrNullable!: string[];
+
+  itsNotField?: string;
+
   @Field(() => String)
   get fullName() {
     return this.firstName + this.lastName;
