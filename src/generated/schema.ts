@@ -27,6 +27,7 @@ export type QueryUserArgs = {
 
 export type User = {
   __typename?: 'User';
+  age?: Maybe<Scalars['Int']>;
   arrNullable?: Maybe<Array<Scalars['String']>>;
   bothNonNull: Array<Scalars['String']>;
   firstName: Scalars['String'];
