@@ -1,8 +1,19 @@
-import { Arg, Query, Resolver } from "type-graphql";
+import { Arg, Ctx, Mutation, Query, Resolver } from "type-graphql";
 
+import { CreateUserInput } from "../schema/InputTypes";
 import User from "../schema/User";
+import { AppContext } from "../types";
 
-const users: Omit<User, "fullName">[] = [
+const DEFAULT_FIELDS: Omit<User, "fullName" | "random"> = {
+  id: "",
+  firstName: "",
+  lastName: "",
+  arrNullable: [],
+  bothNonNull: [],
+  itemAndArrNullable: [],
+  itemNullabel: [],
+};
+const users: Omit<User, "fullName" | "random">[] = [
   {
     id: "1",
     firstName: "JeGwan",
@@ -36,6 +47,22 @@ class TestResolver {
     @Arg("name", { nullable: true }) name?: string
   ) {
     return users.find((user) => user.id === id);
+  }
+
+  @Mutation(() => User)
+  async createUser(
+    @Ctx() ctx: AppContext,
+    @Arg("data") { firstName, lastName }: CreateUserInput
+  ) {
+    console.log(ctx);
+    const user = {
+      ...DEFAULT_FIELDS,
+      firstName,
+      lastName,
+      id: (users.length + 1).toString(),
+    };
+    users.push(user);
+    return user;
   }
 }
 
