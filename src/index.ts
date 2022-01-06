@@ -9,6 +9,7 @@ import path from "path";
 import { buildSchema } from "type-graphql";
 
 import { DEFAULT_PORT } from "./constants";
+import { AppContext } from "./types";
 
 async function startApolloServer() {
   const PORT = process.env.PORT || DEFAULT_PORT;
@@ -25,6 +26,11 @@ async function startApolloServer() {
   });
   const server = new ApolloServer({
     schema,
+    context: (ctx): AppContext => {
+      return {
+        headers: ctx.req.headers,
+      };
+    },
     plugins: [ApolloServerPluginDrainHttpServer({ httpServer })],
   });
   await server.start();
