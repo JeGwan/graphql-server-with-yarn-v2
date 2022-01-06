@@ -3,13 +3,22 @@
 # !!!   DO NOT MODIFY THIS FILE BY YOURSELF   !!!
 # -----------------------------------------------
 
+# Create user input
+input CreateUserInput {
+  firstName: String!
+  lastName: String!
+}
+
+type Mutation {
+  createUser(data: CreateUserInput!): User!
+}
+
 type Query {
   helloWorld: String!
   user(id: String!, name: String, withStatics: Boolean = false): User!
 }
 
 type User {
-  age: Int
   arrNullable: [String!]
   bothNonNull: [String!]!
   firstName: String!
@@ -18,4 +27,6 @@ type User {
   itemAndArrNullable: [String]
   itemNullabel: [String]!
   lastName: String!
+  random: Float
+  starredName: String!
 }
